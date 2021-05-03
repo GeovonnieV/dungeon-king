@@ -4,7 +4,7 @@ import "./styles/app.scss";
 function App() {
   return (
     <div className="App">
-     Dungeon King
+     <h1>Dungeon King</h1>
     </div>
   );
 }
