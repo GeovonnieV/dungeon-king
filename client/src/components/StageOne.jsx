@@ -37,7 +37,7 @@ const StageOne = () => {
 
           </p>
           {/* user selection */}
-          <form >
+          <form onSubmit={checkAnswer} >
             <input
               type="radio"
               id="age1"

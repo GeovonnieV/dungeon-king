@@ -1,6 +1,6 @@
 import React from "react";
 import { Jumbotron, Button } from "react-bootstrap";
-import {Link, Router} from "@reach/router";
+import {Link} from "react-router-dom";
 
 const Intro = () => {
   return (
