@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import { Jumbotron, Button } from "react-bootstrap";
+import {useHistory} from "react-router-dom";
 
 const StageOne = () => {
+
+  let history = useHistory();
 
   // State
   const [userAnswer, setUserAnswer] = useState(""); 
@@ -10,11 +13,12 @@ const StageOne = () => {
     setUserAnswer(e.target.value)
   };
 
- const checkAnswer = () => {
+ const checkAnswer = (e) => {
+   e.preventDefault()
    if(userAnswer === "juniper sword"){
       alert("yay")
    }else{
-     alert("done")
+      history.push("/")
    }
  };
 
@@ -27,9 +31,13 @@ const StageOne = () => {
       <div className="container">
         <Jumbotron className="intro-jumbo">
           <h1 className="intro-head">The Weaponary</h1>
-          <p>which on is the wizard</p>
+          {/* qusetion */}
+          <p>
+            A warrior is as great as his sword. You walk into a room that appears to be one of a black smiths.
+
+          </p>
           {/* user selection */}
-          <form onSubmit={checkAnswer}>
+          <form >
             <input
               type="radio"
               id="age1"
