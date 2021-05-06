@@ -31,8 +31,8 @@ const StageOne = () => {
           <h1 className="intro-head">The Weaponary</h1>
           {/* qusetion */}
           <p>
-            A warrior is as great as his sword. You walk into a room and find a
-            wall of armory with a
+            A warrior is as great as his weapon. The Dungeons witch cast a spell on all but one of the follwing, 
+            let fate decide if you advance to the next stage.
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
