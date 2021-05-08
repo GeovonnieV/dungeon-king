@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Jumbotron, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-const StageOne = () => {
+const StageTwo = () => {
   let history = useHistory();
 
   // State
@@ -15,7 +15,7 @@ const StageOne = () => {
   const checkAnswer = (e) => {
     e.preventDefault();
     if (userAnswer === "juniper-sword") {
-      history.push("/stage-two");
+      alert("heyooo");
     } else {
       history.push("/game-over-stage-one");
     }
@@ -83,4 +83,4 @@ const StageOne = () => {
   );
 };
 
-export default StageOne;
+export default StageTwo;

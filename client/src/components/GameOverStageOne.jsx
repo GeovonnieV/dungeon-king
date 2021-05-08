@@ -1,4 +1,6 @@
 import React from "react";
+import { Jumbotron, Button } from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const GameOverStageOne = () => {
   return (
@@ -7,7 +9,6 @@ const GameOverStageOne = () => {
       {/*  */}
       <div className="container">
         <Jumbotron className="intro-jumbo">
-          <h1 className="intro-head">Escape the Dungeon</h1>
           <p>
             Fate was not on your side.
           </p>
