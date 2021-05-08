@@ -24,15 +24,15 @@ const StageTwo = () => {
   // JSX
   return (
     <div>
-      <h1 className="title">Stage One</h1>
+      <h1 className="title">Stage Two</h1>
       {/*  */}
       <div className="container">
         <Jumbotron className="intro-jumbo">
-          <h1 className="intro-head">The Weaponary</h1>
+          <h1 className="intro-head">Split Decision</h1>
           {/* qusetion */}
           <p>
-            A warrior is as great as his weapon. The Dungeons witch cast a spell on all but one of the follwing, 
-            let fate decide if you advance to the next stage.
+           The Juniper Sword gave you the power to read minds. You aproach 2 doors guarded by a tall elder wizard.
+           He shoots a mystic ball, barley dodigng it you get close enough to the wizard.
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
@@ -46,7 +46,7 @@ const StageTwo = () => {
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="lightning-sword">Lightning Sword</label>
+              <label for="kill">Kill him with the Juniper Sword and walk in the left door</label>
               <br></br>
               {/* answer two */}
               <input
@@ -57,22 +57,11 @@ const StageTwo = () => {
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="juniper-sword">Juniper Sword</label>
-              <br></br>
-              {/* answer three */}
-              <input
-                type="radio"
-                id="earth-staff"
-                name="age"
-                value="earth-staff"
-                style={{ color: "black" }}
-                onClick={getAnswerValue}
-              />
-              <label for="earth-staff">Earth Staff</label>
+              <label for="grab">Grab him and try to read his mind</label>
               <br></br>
             </div>
             <Button variant="primary" type="submit" className="start-btn">
-              Start
+              Select
             </Button>
           </form>
           {/* user selection end */}

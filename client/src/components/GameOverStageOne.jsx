@@ -10,7 +10,7 @@ const GameOverStageOne = () => {
       <div className="container">
         <Jumbotron className="intro-jumbo">
           <p>
-            Fate was not on your side.
+            Fate was not on your side. Heres a life potion drink it and try again.
           </p>
           <p>
             <Link to="/">
