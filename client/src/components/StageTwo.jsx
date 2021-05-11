@@ -14,10 +14,10 @@ const StageTwo = () => {
 
   const checkAnswer = (e) => {
     e.preventDefault();
-    if (userAnswer === "juniper-sword") {
+    if (userAnswer === "slay") {
       alert("heyooo");
     } else {
-      history.push("/game-over-stage-one");
+      history.push("/game-over-stage-two");
     }
   };
 
@@ -40,20 +40,18 @@ const StageTwo = () => {
               {/* answer one  */}
               <input
                 type="radio"
-                id="lightning-sword"
-                name="age"
-                value="lightning-sword"
+                id="slay"
+                value="slay"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="kill">Kill him with the Juniper Sword and walk in the left door</label>
+              <label for="kill">Slay him with the Juniper Sword and walk in the left door</label>
               <br></br>
               {/* answer two */}
               <input
                 type="radio"
-                id="juniper-sword"
-                name="age"
-                value="juniper-sword"
+                id="grab"
+                value="grab"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
