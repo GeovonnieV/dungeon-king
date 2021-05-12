@@ -14,7 +14,7 @@ const StageFive = () => {
 
   const checkAnswer = (e) => {
     e.preventDefault();
-    if (userAnswer === "wing") {
+    if (userAnswer === "mind") {
       history.push("/stage-four");
     } else {
       history.push("/game-over-stage-three");
@@ -32,7 +32,8 @@ const StageFive = () => {
           {/* qusetion */}
           <p>
              You made it to the final stage of the Devils Dungeon. You see in the distance a large gate 
-             with no lever to prop it open. A warlock is the only thing between you and the gate. 
+             with no lever to prop it open. A warlock is the only thing between you and the gate. He is ready to stop 
+             you at all cause what strategy will you use to break free?
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
