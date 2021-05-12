@@ -15,7 +15,7 @@ const Stagefour = () => {
   const checkAnswer = (e) => {
     e.preventDefault();
     if (userAnswer === "blast") {
-      alert("heyooo");
+      history.push("/stage-five");
     } else {
       history.push("/game-over-stage-four");
     }

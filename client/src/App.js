@@ -8,6 +8,7 @@ import StageOne from "./components/StageOne";
 import StageTwo from "./components/StageTwo";
 import StageThree from "./components/StageThree";
 import StageFour from "./components/StageFour";
+import StageFive from "./components/StageFive";
 import Intro from "./components/Intro";
 import GameOverStageOne from "./components/GameOverStageOne";
 import GameOverStageTwo from "./components/GameOverStageTwo";
@@ -32,6 +33,8 @@ function App() {
           {/* stage four */}
           <StageFour path="/stage-four" component={StageFour} />
           <GameOverStageFour path="/game-over-stage-four" component={GameOverStageFour} />
+          {/* stage five */}
+          <StageFive path="/stage-five" component={StageFive} />
         </Switch>
       </Router>
     </div>
