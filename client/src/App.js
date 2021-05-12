@@ -24,7 +24,7 @@ function App() {
           <StageTwo path="/stage-two" component={StageTwo} />
           <GameOverStageTwo path="/game-over-stage-two" component={GameOverStageTwo} />
           {/* stage three */}
-          <StageThree path="stage-three" component={StageThree} />
+          <StageThree path="/stage-three" component={StageThree} />
         </Switch>
       </Router>
     </div>

@@ -15,7 +15,7 @@ const StageTwo = () => {
   const checkAnswer = (e) => {
     e.preventDefault();
     if (userAnswer === "slay") {
-      alert("heyooo");
+      history.push("/stage-three")
     } else {
       history.push("/game-over-stage-two");
     }
