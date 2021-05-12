@@ -7,9 +7,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StageOne from "./components/StageOne";
 import StageTwo from "./components/StageTwo";
 import StageThree from "./components/StageThree";
+import StageFour from "./components/StageFour";
 import Intro from "./components/Intro";
 import GameOverStageOne from "./components/GameOverStageOne";
 import GameOverStageTwo from "./components/GameOverStageTwo";
+import GameOverStageThree from "./components/GameOverStageThree";
+
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <GameOverStageTwo path="/game-over-stage-two" component={GameOverStageTwo} />
           {/* stage three */}
           <StageThree path="/stage-three" component={StageThree} />
+          <GameOverStageThree path="/game-over-stage-three" component={GameOverStageThree} />
+          {/* stage four */}
+          <StageFour path="/stage-four" component={StageFour} />
         </Switch>
       </Router>
     </div>
