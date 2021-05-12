@@ -14,17 +14,17 @@ const StageThree = () => {
 
   const checkAnswer = (e) => {
     e.preventDefault();
-    if (userAnswer === "slay") {
+    if (userAnswer === "wing") {
       alert("heyooo");
     } else {
-      history.push("/game-over-stage-two");
+      history.push("/game-over-stage-three");
     }
   };
 
   // JSX
   return (
     <div>
-      <h1 className="title">Stage Two</h1>
+      <h1 className="title">Stage Three</h1>
       {/*  */}
       <div className="container">
         <Jumbotron className="intro-jumbo">
