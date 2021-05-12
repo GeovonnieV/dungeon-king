@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Jumbotron, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-const Stagefour = () => {
+const StageFive = () => {
   let history = useHistory();
 
   // State
@@ -14,26 +14,25 @@ const Stagefour = () => {
 
   const checkAnswer = (e) => {
     e.preventDefault();
-    if (userAnswer === "blast") {
-      alert("heyooo");
+    if (userAnswer === "wing") {
+      history.push("/stage-four");
     } else {
-      history.push("/game-over-stage-four");
+      history.push("/game-over-stage-three");
     }
   };
 
   // JSX
   return (
     <div>
-      <h1 className="title">Stage Four</h1>
+      <h1 className="title">Stage Five</h1>
       {/*  */}
       <div className="container">
         <Jumbotron className="intro-jumbo">
-          <h1 className="intro-head">Potions</h1>
+          <h1 className="intro-head">Hippogriff</h1>
           {/* qusetion */}
           <p>
-            Select from the following potions. Healing potion will cure you of current wounds, 
-            blast potion is good for a one time blast that will destroy any material infront of it, fire potion will 
-            keep the juniper sword a flame for 24hours. Choose wisley only one will help with the next stage.
+            In comes a soaring Hippogriff, with claws as big as a small house. It picks 
+            you up with only your arms free of its grip. Sword still in hand you are left 2 decisions. 
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
@@ -41,32 +40,22 @@ const Stagefour = () => {
               {/* answer one  */}
               <input
                 type="radio"
-                id="Heal"
-                value="heal"
+                id="feet"
+                value="feet"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="heal">Heal potion</label>
+              <label for="kill">Cut feet and become free of grip</label>
               <br></br>
               {/* answer two */}
               <input
                 type="radio"
-                id="blast"
-                value="blast"
+                id="wing"
+                value="wing"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="blast">Blast potion</label>
-              <br></br>
-              {/* answer three */}
-              <input
-                type="radio"
-                id="fire"
-                value="fire"
-                style={{ color: "black" }}
-                onClick={getAnswerValue}
-              />
-              <label for="fire">Fire potion</label>
+              <label for="grab">Cut wing to stop flight</label>
               <br></br>
             </div>
             <Button variant="primary" type="submit" className="start-btn">
@@ -81,4 +70,4 @@ const Stagefour = () => {
   );
 };
 
-export default Stagefour;
+export default StageFive;
