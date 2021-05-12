@@ -31,8 +31,8 @@ const StageThree = () => {
           <h1 className="intro-head">Hippogriff</h1>
           {/* qusetion */}
           <p>
-           The Juniper Sword gave you the power to read minds. You aproach 2 doors guarded by a tall elder wizard.
-           He shoots a mystic ball, barley dodigng it you get close enough to the wizard.
+            In comes a soaring Hippogriff, with claws as big as a small house. It picks 
+            you up with only your arms free of its grip. Sword still in hand you are left 2 decisions. 
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
@@ -40,22 +40,22 @@ const StageThree = () => {
               {/* answer one  */}
               <input
                 type="radio"
-                id="slay"
-                value="slay"
+                id="feet"
+                value="feet"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="kill">Slay him with the Juniper Sword and walk in the left door</label>
+              <label for="kill">Cut feet and become free of grip</label>
               <br></br>
               {/* answer two */}
               <input
                 type="radio"
-                id="grab"
-                value="grab"
+                id="wing"
+                value="wing"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="grab">Grab him and try to read his mind</label>
+              <label for="grab">Cut wing to stop flight</label>
               <br></br>
             </div>
             <Button variant="primary" type="submit" className="start-btn">

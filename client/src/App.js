@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import components
 import StageOne from "./components/StageOne";
 import StageTwo from "./components/StageTwo";
+import StageThree from "./components/StageThree";
 import Intro from "./components/Intro";
 import GameOverStageOne from "./components/GameOverStageOne";
 import GameOverStageTwo from "./components/GameOverStageTwo";
@@ -22,6 +23,8 @@ function App() {
           {/* stage two */}
           <StageTwo path="/stage-two" component={StageTwo} />
           <GameOverStageTwo path="/game-over-stage-two" component={GameOverStageTwo} />
+          {/* stage three */}
+          <StageThree path="stage-three" component={StageThree} />
         </Switch>
       </Router>
     </div>
