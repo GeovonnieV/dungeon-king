@@ -12,7 +12,7 @@ import Intro from "./components/Intro";
 import GameOverStageOne from "./components/GameOverStageOne";
 import GameOverStageTwo from "./components/GameOverStageTwo";
 import GameOverStageThree from "./components/GameOverStageThree";
-
+import GameOverStageFour from "./components/GameOverStageFour";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <GameOverStageThree path="/game-over-stage-three" component={GameOverStageThree} />
           {/* stage four */}
           <StageFour path="/stage-four" component={StageFour} />
+          <GameOverStageFour path="game-over-stage-four" component={GameOverStageFour} />
         </Switch>
       </Router>
     </div>
