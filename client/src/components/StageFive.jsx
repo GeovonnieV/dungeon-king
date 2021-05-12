@@ -28,11 +28,11 @@ const StageFive = () => {
       {/*  */}
       <div className="container">
         <Jumbotron className="intro-jumbo">
-          <h1 className="intro-head">Hippogriff</h1>
+          <h1 className="intro-head">The Final Stage</h1>
           {/* qusetion */}
           <p>
-            In comes a soaring Hippogriff, with claws as big as a small house. It picks 
-            you up with only your arms free of its grip. Sword still in hand you are left 2 decisions. 
+             You made it to the final stage of the Devils Dungeon. You see in the distance a large gate 
+             with no lever to prop it open. A warlock is the only thing between you and the gate. 
           </p>
           {/* user selection */}
           <form onSubmit={checkAnswer}>
@@ -40,22 +40,22 @@ const StageFive = () => {
               {/* answer one  */}
               <input
                 type="radio"
-                id="feet"
-                value="feet"
+                id="read"
+                value="read"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="kill">Cut feet and become free of grip</label>
+              <label for="read">Read mind</label>
               <br></br>
               {/* answer two */}
               <input
                 type="radio"
-                id="wing"
-                value="wing"
+                id="blast"
+                value="blast"
                 style={{ color: "black" }}
                 onClick={getAnswerValue}
               />
-              <label for="grab">Cut wing to stop flight</label>
+              <label for="blast">Use blast potion</label>
               <br></br>
             </div>
             <Button variant="primary" type="submit" className="start-btn">
