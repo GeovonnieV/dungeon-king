@@ -14,6 +14,9 @@ import GameOverStageOne from "./components/GameOverStageOne";
 import GameOverStageTwo from "./components/GameOverStageTwo";
 import GameOverStageThree from "./components/GameOverStageThree";
 import GameOverStageFour from "./components/GameOverStageFour";
+import GameOverStageFive from "./components/GameOverStageFive";
+import DungeonEscape from "./components/DungeonEscape";
+
 
 function App() {
   return (
@@ -35,6 +38,8 @@ function App() {
           <GameOverStageFour path="/game-over-stage-four" component={GameOverStageFour} />
           {/* stage five */}
           <StageFive path="/stage-five" component={StageFive} />
+          <GameOverStageFive path="/game-over-stage-five" component={GameOverStageFive} />
+          <DungeonEscape path="/dungeon-escape" component={DungeonEscape} />
         </Switch>
       </Router>
     </div>

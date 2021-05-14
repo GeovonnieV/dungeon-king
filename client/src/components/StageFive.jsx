@@ -14,10 +14,10 @@ const StageFive = () => {
 
   const checkAnswer = (e) => {
     e.preventDefault();
-    if (userAnswer === "mind") {
-      history.push("/stage-four");
+    if (userAnswer === "read") {
+      history.push("/dungeon-escape");
     } else {
-      history.push("/game-over-stage-three");
+      history.push("/game-over-stage-five");
     }
   };
 
