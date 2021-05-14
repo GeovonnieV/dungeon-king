@@ -12,7 +12,7 @@ const Intro = () => {
           <h1 className="intro-head">Escape the Dungeon</h1>
           <p>
             This is a simple hero game, you are Tavious a warrior whos team was
-            annihilated during battle in Devils Dungeon. Make it through the 10
+            annihilated during battle in Devils Dungeon. Make it through the 5
             stages to escape, but beware of your choices for it may be your
             last.
           </p>
